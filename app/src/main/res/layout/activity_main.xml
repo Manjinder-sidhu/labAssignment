@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Restaurants"
+            android:id="@+id/btn_restaurant"
+            android:layout_marginRight="0.5dp"
+            android:onClick="btnClick"
+            android:background="@drawable/gradient"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Groceries"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_groceries"
+            android:onClick="btnClick"
+            android:background="@drawable/gradient"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cafe"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_cafe"
+            android:onClick="btnClick"
+            android:background="@drawable/gradient"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"/>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/btn_distance"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:background="#4E9C8C"
+        android:onClick="btnClick"
+        android:text="distance"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/btn_direction"
+        android:onClick="btnClick"
+        android:background="@drawable/route"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_fav_place"
+        android:onClick="btnClick"
+        android:background="@drawable/fav_place"/>
+    <Button
+        android:layout_width="149dp"
+        android:layout_height="65dp"
+        android:text="clear"
+        android:layout_marginLeft="0.5dp"
+        android:id="@+id/btn_clear"
+        android:onClick="btnClick"
+        android:background="#4E9C8C"
+        android:textColor="#fff"/>
+
+
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btn_direction"-->
+<!--        android:onClick="btnClick"-->
+<!--        android:background="#065"-->
+<!--        android:textColor="#fff"-->
+
+<!--        android:text="Get Direction"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btn_fav_places"-->
+<!--        android:onClick="btnClick"-->
+<!--        android:background="#065"-->
+<!--        android:textColor="#fff"-->
+
+<!--        android:text="Favorite Places"/>-->
+
+</LinearLayout>
+</LinearLayout>
